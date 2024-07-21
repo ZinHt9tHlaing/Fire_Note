@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  @apply bg-gray-100;
+}
+
+.nav {
+  @apply flex justify-between items-center mb-3;
+}
+
+.nav-btn {
+  @apply border-0 font-semibold text-white bg-blue-500 px-3 py-2 rounded-md active:scale-95 hover:bg-blue-600 duration-200;
+}
+
+.title {
+  @apply font-bold text-blue-600 text-3xl text-center mt-3 mb-5 hover:text-blue-500 duration-300;
+}
+
+.card-form {
+  @apply bg-blue-500 p-5 flex rounded-lg justify-between items-center;
+}
+
+.card-input {
+  width: 60%;
+  padding: 10px 12px;
+  @apply border-0 outline-none bg-white rounded-lg;
+}
+
+.card-btn {
+  @apply border-0 font-semibold text-blue-500 bg-white px-3 py-2 rounded-md active:scale-95 hover:bg-gray-100 duration-200;
+}
