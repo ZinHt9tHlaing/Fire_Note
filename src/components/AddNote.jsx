@@ -1,9 +1,8 @@
 import { useState } from "react";
 
-const AddNote = () => {
+const AddNote = ({ getNotes }) => {
   // define state
   const [note, setNote] = useState("");
-  // const [error, setError] = useState(null);
 
   // add new note
   const addNote = async (e) => {
@@ -20,6 +19,7 @@ const AddNote = () => {
         }
       );
       setNote("");
+      getNotes();
     } catch (e) {
       alert("Something went wrong. Please try again later.");
     }

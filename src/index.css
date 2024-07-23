@@ -37,3 +37,7 @@ body {
 .card-btn {
   @apply border-0 font-semibold text-blue-500 bg-white px-3 py-2 rounded-md active:scale-95 hover:bg-gray-100 duration-200;
 }
+
+.message {
+  @apply text-center italic font-bold text-2xl mt-6 animate-pulse;
+}
